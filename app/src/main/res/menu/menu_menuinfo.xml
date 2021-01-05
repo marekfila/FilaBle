@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fila.ble.MenuUnit">
+
+    <item android:id="@+id/menu_refresh"
+        android:checkable="false"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"
+        android:title="TODO" />
+
+    <item
+        android:id="@+id/info"
+        android:title="Info"
+        android:icon="@drawable/info_ico_bar"
+        android:showAsAction="always"
+        android:orderInCategory="2"
+        >
+
+    </item>
+</menu>

@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageViewBars"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/menubars" />
+
+        <fila.ble.HorizontalDottedProgress
+            android:layout_width="210dp"
+            android:layout_height="10dp"
+            android:layout_alignStart="@+id/imageViewBars"
+            android:layout_alignBottom="@+id/imageViewBars"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="147dp"
+            ></fila.ble.HorizontalDottedProgress>
+
+        <!--ProgressBar
+            android:id="@+id/progressBarFlow2"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="201dp"
+            android:layout_height="10dp"
+            android:layout_alignEnd="@+id/imageViewBars"
+            android:layout_alignBottom="@+id/imageViewBars"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="148dp"
+            android:max="100"
+            android:progress="0" /-->
+
+        <ProgressBar
+            android:id="@+id/progressBarFilter2"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="201dp"
+            android:layout_height="10dp"
+            android:layout_alignEnd="@+id/imageViewBars"
+            android:layout_alignBottom="@+id/imageViewBars"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="94dp"
+            android:max="100"
+            android:progress="0" />
+
+        <ProgressBar
+            android:id="@+id/progressBarBat2"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="201dp"
+            android:layout_height="10dp"
+            android:layout_alignEnd="@+id/imageViewBars"
+            android:layout_alignBottom="@+id/imageViewBars"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="40dp"
+            android:max="100"
+            android:progress="0" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+
+

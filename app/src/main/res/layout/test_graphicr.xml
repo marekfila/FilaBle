@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvBarFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- l/min"
+        android:textColor="#1B8638"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/imageViewBars"
+        android:layout_alignLeft="@+id/imageViewBars"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="50dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageViewBars"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="40dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/menubars" />
+
+    <ProgressBar
+        android:id="@+id/progressBarFlow2"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="170dp"
+        android:layout_height="10dp"
+        android:layout_alignEnd="@+id/imageViewBars"
+        android:layout_alignBottom="@+id/imageViewBars"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="140dp"
+        android:max="100"
+        android:progress="0" />
+
+    <ProgressBar
+        android:id="@+id/progressBarFilter2"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="170dp"
+        android:layout_height="10dp"
+        android:layout_alignEnd="@+id/imageViewBars"
+        android:layout_alignBottom="@+id/imageViewBars"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="94dp"
+        android:max="100"
+        android:progress="0" />
+
+    <ProgressBar
+        android:id="@+id/progressBarBat2"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="170dp"
+        android:layout_height="10dp"
+        android:layout_alignEnd="@+id/imageViewBars"
+        android:layout_alignBottom="@+id/imageViewBars"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="49dp"
+        android:max="100"
+        android:progress="0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_upR"
+        android:layout_alignEnd="@+id/imageViewBars"
+        android:layout_alignBottom="@+id/imageViewBars"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="123dp"
+        android:background="@android:color/transparent"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_downR"
+        android:layout_alignEnd="@+id/imageViewBars"
+        android:layout_alignBottom="@+id/imageViewBars"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="33dp"
+        android:background="@android:color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewBars"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="44dp"
+        android:textSize="30dp"
+        tools:text="xxxx x xxxx" />
+
+</RelativeLayout>
+

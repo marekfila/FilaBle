@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fila.ble.DeviceScanActivity">
+
+    <item android:id="@+id/menu_scan"
+        android:title="@string/menu_scan"
+        android:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/menu_stop"
+        android:title="@string/menu_stop"
+        android:showAsAction="always"/>
+
+</menu>
