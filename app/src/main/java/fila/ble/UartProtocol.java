@@ -537,7 +537,7 @@ public class UartProtocol {
     }
 
     public void cmdReadStatusTom() {
-        byte[] status =     {0x6E,0x21,0x02,0x03,0x61,0x64,0x00}; // Device Info Tom
+        byte[] status =     {0x6E,0x21,0x02,0x03,0x61,0x64,0x00}; // Device Info
         MainActivity.mBluetoothLeService.writeCharacteristic(BluetoothLeService.mTargetCharacteristic, status);
     }
 
@@ -557,7 +557,7 @@ public class UartProtocol {
 
 
         byte crcSeq = (byte)((0x32+seq) & 0xFF);
-        byte[] updown =     {0x6E,0x21,0x04,0x05,0x2D,(byte)(seq & 0xFF),0x00,crcSeq,0x00}; // Device Info Tom
+        byte[] updown =     {0x6E,0x21,0x04,0x05,0x2D,(byte)(seq & 0xFF),0x00,crcSeq,0x00}; // Device Info
         MainActivity.mBluetoothLeService.writeCharacteristic(BluetoothLeService.mTargetCharacteristic, updown);
     }
 
